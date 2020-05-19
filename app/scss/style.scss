@@ -279,12 +279,37 @@ body {
 
 // end banner 
 
+// start search-box 
 
+.search-box__inner {
+  position: relative;
+}
 
+.search-box__form {
+  height: 135px;
+  padding: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.08);
+  background-color: #fff;
+  border-radius: 4px;
+  position: absolute;
+  top: -67px;
+}
 
-
-
-
+.search-box__btn {
+  background-color: #0674ec;
+  font-size: 16px;
+  line-height: 42px;
+  border: none;
+  max-width: 223px;
+  width: 100%;
+  border-radius: 4px;
+  
+}
+// end search-box 
 
 
 
