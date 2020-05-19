@@ -1,3 +1,41 @@
+@font-face {
+  font-family: 'Quicksand', sans-serif;
+  src: url('../fonts/Quicksand-Light.woff2') format('woff2'),
+      url('../fonts/Quicksand-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Quicksand', sans-serif;
+  src: url('../fonts/Quicksand-Regular.woff2') format('woff2'),
+      url('../fonts/Quicksand-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Quicksand', sans-serif;
+  src: url('../fonts/Quicksand-Medium.woff2') format('woff2'),
+      url('../fonts/Quicksand-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Quicksand', sans-serif;
+  src: url('../fonts/Quicksand-Bold.woff2') format('woff2'),
+      url('../fonts/Quicksand-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
 html {
   box-sizing: border-box;
 }
@@ -8,6 +46,101 @@ html {
   box-sizing: inherit;
 }
 
-.box {
-  display: flex;
+
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
 }
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+
+// start header 
+
+.header__top {
+  height: 100px;
+  background-color: #eef1f3;
+
+  &-inner {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &-menu {
+    display: flex;
+    align-items: center;
+  }
+
+  &-btn {
+    padding: 4px 18px;
+    color: #fff;
+    background-color: #0674ec;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    line-height: 28px;
+    border-radius: 20px;
+    text-decoration: none;
+    margin-right: 50px;
+  }
+
+  &-item {
+    text-decoration: none;
+    color: #7e8fa1;
+    font-size: 20px;
+    margin-right: 30px;
+    position: relative;
+  }
+
+//   &-item::after {
+//     content: '22';
+//     position: absolute;
+//     width: 22px;
+//     height: 22px;
+//     background-color: #ff6a6c;
+//     color: #fff;
+//     font-size: 14px;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     border-radius: 50%;
+//     top: -15px;
+//     right: -15px;
+//     font-family: 'Quicksand', sans-serif;
+//     font-weight: 500;
+//   }
+// }
+
+// &-item::after {
+//   content: '22';
+//   position: absolute;
+//   width: 22px;
+//   height: 22px;
+//   background-color: #ff6a6c;
+//   color: #fff;
+//   font-size: 14px;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   border-radius: 50%;
+//   top: -15px;
+//   right: -15px;
+//   font-family: 'Quicksand', sans-serif;
+//   font-weight: 500;
+// }
+
+
+
+
+
+
+
+
+
+
