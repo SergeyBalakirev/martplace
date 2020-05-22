@@ -117,12 +117,12 @@ body {
     font-weight: 500;
   }
 
-.lnr-envelope:after {
+.header-envelope:after {
   content: '6';
   background-color: #62d03b;
 }
 
-.lnr-cart:after {
+.header-cart:after {
   content: '2';
   background-color: #0674ec;
 }
@@ -480,7 +480,7 @@ body {
 }
 
 
-.featured-product__item {
+.featured-product__item-inner {
   width: 100%;
   height: 450px;
   border-radius: 4px;
@@ -540,7 +540,9 @@ body {
 
 
 .featured-product__descr {
-  padding: 50px 50px 25px;
+  padding: 45px 50px 20px;
+  max-width: 586px;
+  width: 100%;
 }
 
 .featured-product__descr-title {
@@ -552,7 +554,7 @@ body {
 
 .featured-product__descr-author {
   display: flex;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
   font-size: 15px;
   line-height: 30px;
 }
@@ -595,4 +597,80 @@ body {
   top: 50%;
   transform: translateY(-50%);
 }
+
+.featured-product__descr-text {
+  font-size: 16px;
+  line-height: 30px;
+  color: #555555;
+  margin-bottom: 35px;
+}
+
+.featured-product__descr-categories {
+  display: flex;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #ececec;
+}
+
+.featured-product__descr-category {
+  font-size: 15px;
+  color: #868c96;
+  background-color: #f1f3f6;
+  padding: 6px 15px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+.featured-product__descr-category + .featured-product__descr-category {
+  margin-left: 7px;
+}
+
+.featured-product__descr-info {
+  display: flex;
+  align-items: center;
+  padding-top: 23px;
+  font-size: 15px;
+}
+
+.featured-product__descr-price {
+  color: #fff;
+  background-color: #0674ec;
+  padding: 6px 15px;
+  border-radius: 20px;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.featured-product__descr-like {
+  color: #555;
+  margin-right: 20px;
+}
+
+.featured-heart {
+  color: #7347c1;
+  font-weight: 500;
+  margin-right: 5px;
+}
+
+
+.featured-product__descr-cart {
+  color: #0674ec;
+}
+
+.featured-cart {
+  font-weight: 500;
+  margin-right: 5px;
+}
+
+.featured-product__descr-star {
+  margin-left: auto;
+}
+
+
+
+
+
+
+
+
+
 // end featured-product 
