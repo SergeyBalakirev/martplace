@@ -22,6 +22,7 @@ $(function () {
   $('.featured-product__slider-inner').slick({
     prevArrow: '<button class="slick-arrow slick-prev icon-lnr-chevron-left"></button>',
     nextArrow: '<button class="slick-arrow slick-next icon-lnr-chevron-right"></button>',
+    appendArrows: '.featured-product__slider-arrow'
   });
 
 

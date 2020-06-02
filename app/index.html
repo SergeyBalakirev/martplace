@@ -20,27 +20,30 @@
 
         <div class="header__top-inner">
 
-          <div class="header__logo">
-            <a class="header__logo-link" href="#">
-              <img src="images/Logo.png" alt="logo">
-            </a>
-          </div>
+
+          <a class="header__logo" href="#">
+            <img src="images/Logo.png" alt="logo">
+          </a>
+
 
           <div class="header__top-menu">
             <a class="header__top-btn" href="#">
               Become a Seller
             </a>
             <div class="header__top-items">
-              <a class="icon-lnr-alarm header__top-item header-alarm" href="#"><span>22</span></a>
-              <a class="icon-lnr-envelope header__top-item header-envelope" href="#"><span>6</span></a>
-              <a class="icon-lnr-cart header__top-item header-cart" href="#"><span>2</span></a>
+              <a class="icon-lnr-alarm header__top-item" href="#"><span
+                  class="header__notification header__notification--red">25</span></a>
+              <a class="icon-lnr-envelope header__top-item" href="#"><span
+                  class="header__notification header__notification--green">6</span></a>
+              <a class="icon-lnr-cart header__top-item" href="#"><span
+                  class="header__notification header__notification--blue">2</span></a>
             </div>
-            <div class="header__top-user">
-              <a class="header__top-avatar" href="#" style="background-image: url(images/content/avatar.jpg);">
+            <div class="header__user">
+              <a class="header__avatar" href="#" style="background-image: url(images/content/avatar.jpg);">
               </a>
-              <div class="header__top-userinfo">
-                <a class="header__top-username" href="#">Taofiq Hakim</a>
-                <div class="header__top-userbalanse">$20.45</div>
+              <div class="header__userinfo">
+                <a class="header__username" href="#">Taofiq Hakim</a>
+                <div class="header__userbalanse">$20.45</div>
               </div>
             </div>
           </div>
@@ -54,7 +57,7 @@
             <ul class="menu__list">
               <li class="menu__item">
                 <a class="menu__link" href="#">
-                  HOME
+                  Home
                 </a>
               </li>
               <li class="menu__item">
@@ -82,7 +85,7 @@
           <div class="header__search">
 
             <form class="header__search-form">
-              <input class="header__search-input" type="text" placeholder="Search product here...">
+              <input class="header__search-input" type="search" placeholder="Search product here...">
               <button class="header__search-btn" type="submit">
                 <div class="icon-lnr-magnifier"></div>
               </button>
@@ -102,7 +105,7 @@
           <div class="banner__title">
             Create Your Own
           </div>
-          <div class="banner__title--bold">
+          <div class="banner__title banner__title--bold">
             Digital Product Marketplace
           </div>
           <div class="banner__text">
@@ -124,7 +127,7 @@
 
           <form class="search-box__form">
 
-            <input class="search-box__input" type="text" placeholder="Search your products...">
+            <input class="search-box__input" type="search" placeholder="Search your products...">
 
             <div class="search-box__select-box">
               <select class="search-box__select">
@@ -153,7 +156,7 @@
         <div class="features__inner">
 
           <div class="features__item">
-            <div class="features__item-img research"></div>
+            <div class="features__item-img features__item-img--research"></div>
             <div class="features__item-title">
               Best UX Research
             </div>
@@ -164,7 +167,7 @@
           </div>
 
           <div class="features__item">
-            <div class="features__item-img responsive"></div>
+            <div class="features__item-img features__item-img--responsive"></div>
             <div class="features__item-title">
               Fully Responsive
             </div>
@@ -175,7 +178,7 @@
           </div>
 
           <div class="features__item">
-            <div class="features__item-img buy_sell"></div>
+            <div class="features__item-img features__item-img--sell"></div>
             <div class="features__item-title">
               Buy & Sell Easily
             </div>
@@ -197,7 +200,7 @@
             <div class="featured-product__title">
               Weekly Featured Products
             </div>
-
+            <div class="featured-product__slider-arrow"></div>
           </div>
 
           <div class="featured-product__slider">
@@ -206,8 +209,9 @@
 
               <div class="featured-product__item">
                 <div class="featured-product__item-inner">
-                  <div class="featured-product__img-box" style="background-image: url(images/content/product.jpg);">
-                    <div class="featured-product__img--hover">
+                  <div class="featured-product__img-box">
+                    <img class="featured-product__img" src="images/content/product.jpg" alt="featured-product">
+                    <div class="featured-product__img-hover">
                       <a class="featured-product__img-btn" href="#">More Info</a>
                       <a class="featured-product__img-btn" href="#">Live Demo</a>
                     </div>
@@ -217,8 +221,14 @@
                       One Page Resume Template
                     </div>
                     <div class="featured-product__descr-author">
+                      <a class="featured-product__descr-avatar" href="#">
+                        <img src="images/content/avatar-2.jpg" alt="avatar">
+                      </a>
                       <a class="featured-product__descr-name" href="#">
                         AazzTech
+                      </a>
+                      <a class="featured-product__descr-thema" href="#">
+                        <img src="images/wordpress.png" alt="avatar">
                       </a>
                       <a class="featured-product__descr-platform" href="#">
                         WordPress
@@ -246,14 +256,14 @@
                       <a class="featured-product__descr-price" href="#">
                         $10 - $50
                       </a>
-                      <div class="featured-product__descr-like">
-                        <span class="lnr lnr-heart featured-heart"></span>
+                      <button class="featured-product__descr-like">
+                        <span class="icon-lnr-heart featured-heart"></span>
                         46
-                      </div>
-                      <div class="featured-product__descr-cart">
-                        <span class="lnr lnr-cart featured-cart"></span>
+                      </button>
+                      <button class="featured-product__descr-cart">
+                        <span class="icon-lnr-cart featured-cart"></span>
                         634
-                      </div>
+                      </button>
                       <div class="featured-product__descr-star"></div>
                     </div>
 
@@ -264,8 +274,9 @@
 
               <div class="featured-product__item">
                 <div class="featured-product__item-inner">
-                  <div class="featured-product__img-box" style="background-image: url(images/content/product.jpg);">
-                    <div class="featured-product__img--hover">
+                  <div class="featured-product__img-box">
+                    <img class="featured-product__img" src="images/content/product.jpg" alt="featured-product">
+                    <div class="featured-product__img-hover">
                       <a class="featured-product__img-btn" href="#">More Info</a>
                       <a class="featured-product__img-btn" href="#">Live Demo</a>
                     </div>
@@ -275,8 +286,14 @@
                       One Page Resume Template
                     </div>
                     <div class="featured-product__descr-author">
+                      <a class="featured-product__descr-avatar" href="#">
+                        <img src="images/content/avatar-2.jpg" alt="avatar">
+                      </a>
                       <a class="featured-product__descr-name" href="#">
                         AazzTech
+                      </a>
+                      <a class="featured-product__descr-thema" href="#">
+                        <img src="images/wordpress.png" alt="avatar">
                       </a>
                       <a class="featured-product__descr-platform" href="#">
                         WordPress
@@ -304,14 +321,14 @@
                       <a class="featured-product__descr-price" href="#">
                         $10 - $50
                       </a>
-                      <div class="featured-product__descr-like">
-                        <span class="lnr lnr-heart featured-heart"></span>
+                      <button class="featured-product__descr-like">
+                        <span class="icon-lnr-heart featured-heart"></span>
                         46
-                      </div>
-                      <div class="featured-product__descr-cart">
-                        <span class="lnr lnr-cart featured-cart"></span>
+                      </button>
+                      <button class="featured-product__descr-cart">
+                        <span class="icon-lnr-cart featured-cart"></span>
                         634
-                      </div>
+                      </button>
                       <div class="featured-product__descr-star"></div>
                     </div>
 
@@ -322,8 +339,9 @@
 
               <div class="featured-product__item">
                 <div class="featured-product__item-inner">
-                  <div class="featured-product__img-box" style="background-image: url(images/content/product.jpg);">
-                    <div class="featured-product__img--hover">
+                  <div class="featured-product__img-box">
+                    <img class="featured-product__img" src="images/content/product.jpg" alt="featured-product">
+                    <div class="featured-product__img-hover">
                       <a class="featured-product__img-btn" href="#">More Info</a>
                       <a class="featured-product__img-btn" href="#">Live Demo</a>
                     </div>
@@ -333,8 +351,14 @@
                       One Page Resume Template
                     </div>
                     <div class="featured-product__descr-author">
+                      <a class="featured-product__descr-avatar" href="#">
+                        <img src="images/content/avatar-2.jpg" alt="avatar">
+                      </a>
                       <a class="featured-product__descr-name" href="#">
                         AazzTech
+                      </a>
+                      <a class="featured-product__descr-thema" href="#">
+                        <img src="images/wordpress.png" alt="avatar">
                       </a>
                       <a class="featured-product__descr-platform" href="#">
                         WordPress
@@ -362,14 +386,14 @@
                       <a class="featured-product__descr-price" href="#">
                         $10 - $50
                       </a>
-                      <div class="featured-product__descr-like">
-                        <span class="lnr lnr-heart featured-heart"></span>
+                      <button class="featured-product__descr-like">
+                        <span class="icon-lnr-heart featured-heart"></span>
                         46
-                      </div>
-                      <div class="featured-product__descr-cart">
-                        <span class="lnr lnr-cart featured-cart"></span>
+                      </button>
+                      <button class="featured-product__descr-cart">
+                        <span class="icon-lnr-cart featured-cart"></span>
                         634
-                      </div>
+                      </button>
                       <div class="featured-product__descr-star"></div>
                     </div>
 
@@ -380,8 +404,9 @@
 
               <div class="featured-product__item">
                 <div class="featured-product__item-inner">
-                  <div class="featured-product__img-box" style="background-image: url(images/content/product.jpg);">
-                    <div class="featured-product__img--hover">
+                  <div class="featured-product__img-box">
+                    <img class="featured-product__img" src="images/content/product.jpg" alt="featured-product">
+                    <div class="featured-product__img-hover">
                       <a class="featured-product__img-btn" href="#">More Info</a>
                       <a class="featured-product__img-btn" href="#">Live Demo</a>
                     </div>
@@ -391,8 +416,14 @@
                       One Page Resume Template
                     </div>
                     <div class="featured-product__descr-author">
+                      <a class="featured-product__descr-avatar" href="#">
+                        <img src="images/content/avatar-2.jpg" alt="avatar">
+                      </a>
                       <a class="featured-product__descr-name" href="#">
                         AazzTech
+                      </a>
+                      <a class="featured-product__descr-thema" href="#">
+                        <img src="images/wordpress.png" alt="avatar">
                       </a>
                       <a class="featured-product__descr-platform" href="#">
                         WordPress
@@ -420,14 +451,14 @@
                       <a class="featured-product__descr-price" href="#">
                         $10 - $50
                       </a>
-                      <div class="featured-product__descr-like">
-                        <span class="lnr lnr-heart featured-heart"></span>
+                      <button class="featured-product__descr-like">
+                        <span class="icon-lnr-heart featured-heart"></span>
                         46
-                      </div>
-                      <div class="featured-product__descr-cart">
-                        <span class="lnr lnr-cart featured-cart"></span>
+                      </button>
+                      <button class="featured-product__descr-cart">
+                        <span class="icon-lnr-cart featured-cart"></span>
                         634
-                      </div>
+                      </button>
                       <div class="featured-product__descr-star"></div>
                     </div>
 
@@ -454,10 +485,10 @@
             <div class="new-items__title">
               Newest Release Products
             </div>
-            <div class="new-items__filter">
+            <button class="new-items__filter">
               Filter by:
               <span class="new-items__filter-btn"></span>
-            </div>
+            </button>
 
             <div class="filter__box">
               <div class="filter__inner">
@@ -504,10 +535,10 @@
 
           <div class="new-items__product-box">
 
-            <div class="new-items__product mix category-psd category-new">
-              <div class="new-items__product-images" style="background-image: url(images/content/product1.jpg);">
-
-                <div class="new-items__img--hover">
+            <article class="new-items__product mix category-psd category-new">
+              <div class="new-items__img-box">
+                <img class="new-items__img" src="images/content/product.jpg" alt="new-items__img">
+                <div class="new-items__img-hover">
                   <a class="new-items__img-btn" href="#">More Info</a>
                   <a class="new-items__img-btn" href="#">Live Demo</a>
                 </div>
@@ -516,8 +547,11 @@
               <div class="new-items__product-title">E-commerce Shopping Cart</div>
               <div class="new-items__product-user">
                 <a class="new-items__product-avatar" href="#"
-                  style="background-image: url(images/content/avatar.jpg);"></a>
+                  style="background-image: url(images/content/avatar-4.jpg);"></a>
                 <a class="new-items__product-name" href="#">Theme-Valley</a>
+                <a class="new-items__product-cms" href="#">
+                  <img src="images/wordpress.png" alt="cms">
+                </a>
                 <a class="new-items__product-thema" href="#">Plugin</a>
               </div>
               <p class="new-items__product-text">
@@ -530,12 +564,12 @@
                 <div class="new-items__product-star"></div>
                 <div class="new-items__product-cart">246</div>
               </div>
-            </div>
+            </article>
 
-            <div class="new-items__product mix category-joomla category-new">
-              <div class="new-items__product-images" style="background-image: url(images/content/product1.jpg);">
-
-                <div class="new-items__img--hover">
+            <article class="new-items__product mix category-joomla category-new">
+              <div class="new-items__img-box">
+                <img class="new-items__img" src="images/content/product.jpg" alt="new-items__img">
+                <div class="new-items__img-hover">
                   <a class="new-items__img-btn" href="#">More Info</a>
                   <a class="new-items__img-btn" href="#">Live Demo</a>
                 </div>
@@ -544,8 +578,11 @@
               <div class="new-items__product-title">E-commerce Shopping Cart</div>
               <div class="new-items__product-user">
                 <a class="new-items__product-avatar" href="#"
-                  style="background-image: url(images/content/avatar.jpg);"></a>
+                  style="background-image: url(images/content/avatar-2.jpg);"></a>
                 <a class="new-items__product-name" href="#">Theme-Valley</a>
+                <a class="new-items__product-cms" href="#">
+                  <img src="images/wordpress.png" alt="cms">
+                </a>
                 <a class="new-items__product-thema" href="#">Plugin</a>
               </div>
               <p class="new-items__product-text">
@@ -558,12 +595,12 @@
                 <div class="new-items__product-star"></div>
                 <div class="new-items__product-cart">246</div>
               </div>
-            </div>
+            </article>
 
-            <div class="new-items__product mix category-wordpress category-new">
-              <div class="new-items__product-images" style="background-image: url(images/content/product1.jpg);">
-
-                <div class="new-items__img--hover">
+            <article class="new-items__product mix category-wordpress category-new">
+              <div class="new-items__img-box">
+                <img class="new-items__img" src="images/content/product.jpg" alt="new-items__img">
+                <div class="new-items__img-hover">
                   <a class="new-items__img-btn" href="#">More Info</a>
                   <a class="new-items__img-btn" href="#">Live Demo</a>
                 </div>
@@ -572,8 +609,11 @@
               <div class="new-items__product-title">E-commerce Shopping Cart</div>
               <div class="new-items__product-user">
                 <a class="new-items__product-avatar" href="#"
-                  style="background-image: url(images/content/avatar.jpg);"></a>
+                  style="background-image: url(images/content/avatar-4.jpg);"></a>
                 <a class="new-items__product-name" href="#">Theme-Valley</a>
+                <a class="new-items__product-cms" href="#">
+                  <img src="images/wordpress.png" alt="cms">
+                </a>
                 <a class="new-items__product-thema" href="#">Plugin</a>
               </div>
               <p class="new-items__product-text">
@@ -586,12 +626,12 @@
                 <div class="new-items__product-star"></div>
                 <div class="new-items__product-cart">246</div>
               </div>
-            </div>
+            </article>
 
-            <div class="new-items__product mix category-joomla category-new">
-              <div class="new-items__product-images" style="background-image: url(images/content/product1.jpg);">
-
-                <div class="new-items__img--hover">
+            <article class="new-items__product mix category-joomla category-new">
+              <div class="new-items__img-box">
+                <img class="new-items__img" src="images/content/product.jpg" alt="new-items__img">
+                <div class="new-items__img-hover">
                   <a class="new-items__img-btn" href="#">More Info</a>
                   <a class="new-items__img-btn" href="#">Live Demo</a>
                 </div>
@@ -600,8 +640,11 @@
               <div class="new-items__product-title">E-commerce Shopping Cart</div>
               <div class="new-items__product-user">
                 <a class="new-items__product-avatar" href="#"
-                  style="background-image: url(images/content/avatar.jpg);"></a>
+                  style="background-image: url(images/content/avatar-3.jpg);"></a>
                 <a class="new-items__product-name" href="#">Theme-Valley</a>
+                <a class="new-items__product-cms" href="#">
+                  <img src="images/wordpress.png" alt="cms">
+                </a>
                 <a class="new-items__product-thema" href="#">Plugin</a>
               </div>
               <p class="new-items__product-text">
@@ -614,12 +657,12 @@
                 <div class="new-items__product-star"></div>
                 <div class="new-items__product-cart">246</div>
               </div>
-            </div>
+            </article>
 
-            <div class="new-items__product mix category-plugins category-new">
-              <div class="new-items__product-images" style="background-image: url(images/content/product1.jpg);">
-
-                <div class="new-items__img--hover">
+            <article class="new-items__product mix category-plugins category-new">
+              <div class="new-items__img-box">
+                <img class="new-items__img" src="images/content/product.jpg" alt="new-items__img">
+                <div class="new-items__img-hover">
                   <a class="new-items__img-btn" href="#">More Info</a>
                   <a class="new-items__img-btn" href="#">Live Demo</a>
                 </div>
@@ -628,8 +671,11 @@
               <div class="new-items__product-title">E-commerce Shopping Cart</div>
               <div class="new-items__product-user">
                 <a class="new-items__product-avatar" href="#"
-                  style="background-image: url(images/content/avatar.jpg);"></a>
+                  style="background-image: url(images/content/avatar-2.jpg);"></a>
                 <a class="new-items__product-name" href="#">Theme-Valley</a>
+                <a class="new-items__product-cms" href="#">
+                  <img src="images/wordpress.png" alt="cms">
+                </a>
                 <a class="new-items__product-thema" href="#">Plugin</a>
               </div>
               <p class="new-items__product-text">
@@ -642,12 +688,12 @@
                 <div class="new-items__product-star"></div>
                 <div class="new-items__product-cart">246</div>
               </div>
-            </div>
+            </article>
 
-            <div class="new-items__product mix category-wordpress category-new">
-              <div class="new-items__product-images" style="background-image: url(images/content/product1.jpg);">
-
-                <div class="new-items__img--hover">
+            <article class="new-items__product mix category-wordpress category-new">
+              <div class="new-items__img-box">
+                <img class="new-items__img" src="images/content/product.jpg" alt="new-items__img">
+                <div class="new-items__img-hover">
                   <a class="new-items__img-btn" href="#">More Info</a>
                   <a class="new-items__img-btn" href="#">Live Demo</a>
                 </div>
@@ -656,8 +702,11 @@
               <div class="new-items__product-title">E-commerce Shopping Cart</div>
               <div class="new-items__product-user">
                 <a class="new-items__product-avatar" href="#"
-                  style="background-image: url(images/content/avatar.jpg);"></a>
+                  style="background-image: url(images/content/avatar-1.jpg);"></a>
                 <a class="new-items__product-name" href="#">Theme-Valley</a>
+                <a class="new-items__product-cms" href="#">
+                  <img src="images/wordpress.png" alt="cms">
+                </a>
                 <a class="new-items__product-thema" href="#">Plugin</a>
               </div>
               <p class="new-items__product-text">
@@ -670,7 +719,7 @@
                 <div class="new-items__product-star"></div>
                 <div class="new-items__product-cart">246</div>
               </div>
-            </div>
+            </article>
 
           </div>
 
