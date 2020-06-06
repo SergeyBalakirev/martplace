@@ -9,7 +9,7 @@ $(function () {
 
   });
 
-  $(".new-items__product-star").rateYo({
+  $(".product-card__star").rateYo({
     rating: 4.5,
     starWidth: "11px",
     ratedFill: "#ffc000",
@@ -22,7 +22,7 @@ $(function () {
   $('.featured-product__slider-inner').slick({
     prevArrow: '<button class="slick-arrow slick-prev icon-lnr-chevron-left"></button>',
     nextArrow: '<button class="slick-arrow slick-next icon-lnr-chevron-right"></button>',
-    appendArrows: '.featured-product__slider-arrow'
+    appendArrows: '.section-title__arrow'
   });
 
 
