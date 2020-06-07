@@ -933,6 +933,161 @@
 }
 
 // end new-items 
+.follower-feed {
+  padding: 120px 0 120px;
+  background-color: #eff1f5;
+  & .slick-arrow {
+    background-color: #0674ec;
+  }
+}
+
+// start follower-feed 
+
+
+.follower-feed__slider-inner .product-card {
+  margin-bottom: 0;
+}
+
+
+// end follower-feed 
+
+
+// start fun-fact 
+
+.fun-fact {
+  background-color: #212225;
+  padding: 95px 0 95px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+  &__ico {
+    font-size: 48px;
+    margin-bottom: 40px;
+    &--yellow {
+      color: #feb71d;
+    }
+    &--blue {
+      color: #58c9e9;
+    }
+    &--green {
+      color: #77de51;
+    }
+    &--red {
+      color: #ff6a6d;
+    }
+  }
+  &__num {
+    font-size: 36px;
+    margin-bottom: 15px;
+    &--yellow {
+      color: #feb71d;
+    }
+    &--blue {
+      color: #58c9e9;
+    }
+    &--green {
+      color: #77de51;
+    }
+    &--red {
+      color: #ff6a6d;
+    }
+  }
+  &__txt {
+    font-size: 18px;
+    color: #fff;
+  }
+}
+
+
+// end fun-fact 
+
+// start why-choose 
+
+.why-choose {
+  padding: 120px 0 90px;
+}
+
+.section-ttl {
+  text-align: center;
+  &__title {
+    font-size: 36px;
+    color: #000;
+    margin-bottom: 20px;
+    &--blue {
+      color: #0674ec;
+    }
+  }
+  &__text {
+    display: block;
+    max-width: 680px;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 30px;
+    color: #555;
+  }
+}
+
+.why-choose {
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 60px;
+  }
+  &__item {
+    max-width: 361px;
+    width: 100%;
+    padding: 55px 25px 60px;
+    border-radius: 4px;
+    box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+    margin-bottom: 30px;
+    text-align: center;
+    position: relative;
+  }
+  &__num {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 48px;
+    color: #dee7fe;
+    font-weight: 300;
+  }
+  &__ico {
+    font-size: 60px;
+    margin-bottom: 40px;
+  }
+  &__title {
+    font-size: 24px;
+    color: #000;
+    margin-bottom: 30px;
+  }
+  &__text {
+    font-size: 16px;
+    line-height: 30px;
+    color: #555;
+    margin: 0;
+  }
+  .icon-lnr-license {
+    color: #0674ec;
+  }
+  .icon-lnr-magic-wand {
+    color: #7f4ec2;
+  }
+  .icon-lnr-lock {
+    color: #77de51;
+  }
+  .icon-lnr-chart-bars {
+    color: #feb71d;
+  }
+  .icon-lnr-leaf {
+    color: #58c9e9;
+  }
+  .icon-lnr-phone {
+    color: #ff6a6d;
+  }
+}
 
 
 
@@ -941,6 +1096,8 @@
 
 
 
+
+// end why-choose 
 
 
 

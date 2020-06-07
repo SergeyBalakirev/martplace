@@ -22,8 +22,25 @@ $(function () {
   $('.featured-product__slider-inner').slick({
     prevArrow: '<button class="slick-arrow slick-prev icon-lnr-chevron-left"></button>',
     nextArrow: '<button class="slick-arrow slick-next icon-lnr-chevron-right"></button>',
-    appendArrows: '.section-title__arrow'
+    appendArrows: '.section-title__arrow',
   });
+
+  $('.follower-feed__slider-inner').slick({
+    prevArrow: '<button class="slick-arrow slick-prev icon-lnr-chevron-left"></button>',
+    nextArrow: '<button class="slick-arrow slick-next icon-lnr-chevron-right"></button>',
+    appendArrows: '.follower-feed__arrow',
+
+    // infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    centerMode: false,
+    variableWidth: true,
+  });
+
+
+
+
+
 
 
   $(".new-items__filter").on('click', function () {
