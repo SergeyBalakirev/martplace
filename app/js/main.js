@@ -38,7 +38,15 @@ $(function () {
   });
 
 
+  $('.testimonials__slider-inner').slick({
+    // prevArrow: '<button class="slick-arrow slick-prev icon-lnr-chevron-left"></button>',
+    // nextArrow: '<button class="slick-arrow slick-next icon-lnr-chevron-right"></button>',
+    // appendArrows: '.testimonials__slider-arrow',
 
+    // infinite: true,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+  });
 
 
 

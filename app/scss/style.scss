@@ -413,7 +413,7 @@
 }
 
 
-.slick-arrow {
+.featured-product .slick-arrow {
   border: none;
   outline: transparent;
   width: 55px;
@@ -428,11 +428,11 @@
   }
 }
 
-.slick-prev {
+.featured-product .slick-prev {
   border-radius: 30px 0 0 30px;
 }
 
-.slick-next {
+.featured-product .slick-next {
   border-radius: 0 30px 30px 0;
 }
 
@@ -938,6 +938,23 @@
   background-color: #eff1f5;
   & .slick-arrow {
     background-color: #0674ec;
+    border: none;
+    outline: transparent;
+    width: 55px;
+    height: 45px;
+    color: #fff;
+    font-size: 14px;
+    z-index: 5;
+    transition: all .3s;
+    &:hover {
+      opacity: .8;
+    }
+  }
+  & .slick-prev {
+    border-radius: 30px 0 0 30px;
+  }
+  & .slick-next {
+    border-radius: 0 30px 30px 0;
   }
 }
 
@@ -1015,9 +1032,9 @@
     font-size: 36px;
     color: #000;
     margin-bottom: 20px;
-    &--blue {
-      color: #0674ec;
-    }
+  }
+  &__title-span {
+    color: #0674ec;
   }
   &__text {
     display: block;
@@ -1090,16 +1107,181 @@
 }
 
 
-
-
-
-
-
-
-
 // end why-choose 
 
 
+// start sell-buy 
+
+.sell-buy {
+  display: flex;
+  &__sell,
+  &__buy {
+    background-image: url(../images/sell-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 961px;
+    width: 100%;
+    min-height: 561px;
+    text-align: center;
+    color: #fff;
+    padding: 100px 20px;
+  }
+  &__buy {
+    background-image: url(../images/buy-bg.jpg);
+    max-width: 959px;
+    width: 100%;
+  }
+  &__sell-ico,
+  &__buy-ico {
+    display: block;
+    background-image: url(../images/sell-Icon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 120px;
+    width: 100%;
+    min-height: 101px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+  &__buy-ico {
+    background-image: url(../images/buy-Icon.png);
+    max-width: 100px;
+    width: 100%;
+    min-height: 100px;
+  }
+  &__title {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  &__text {
+    font-size: 16px;
+    line-height: 30px;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+  &__button {
+    background-color: #fff;
+    text-decoration: none;
+    max-width: 190px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #fff;
+    &:hover {
+      background-color: transparent;
+      color: #fff;
+    }
+    &--sell {
+      color: #0674ec;
+    }
+    &--buy {
+      color: #7347c1;
+    }
+  }
+}
+// end sell-buy 
+
+
+
+// start testimonials 
+
+.testimonials {
+  padding: 120px 0;
+  .section-ttl {
+    margin-bottom: 50px;
+  }
+  &__item {
+    padding: 50px 35px;
+    border-left: 2px solid #0674ec;
+    max-width: 555px;
+    border-radius: 0 4px 4px 0;
+    box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+  }
+  &__row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  &__avatar-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #808080;
+    margin-right: 18px;
+  }
+  &__user-name {
+    display: block;
+    font-size: 20px;
+    color: #000;
+    margin-bottom: 7px;
+    text-decoration: none;
+  }
+  &__prof {
+    display: block;
+    font-size: 16px;
+    color: #555;
+    text-decoration: none;
+  }
+  &__ico {
+    margin-left: auto;
+    font-size: 60px;
+    color: #e8e8e8;
+  }
+  &__text {
+    margin: 0;
+    font-size: 16px;
+    line-height: 30px;
+    color: #555;
+  }
+  &__button {
+    display: block;
+    max-width: 190px;
+    margin: 0 auto;
+    margin-top: 60px;
+    background-color: #0674ec;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+  }
+}
+
+// .testimonials {
+//   &__slider{
+//     position: relative;
+//   }
+//   .slick-arrow {
+//     position: absolute;
+//     top: 20px;
+//     left: 0;
+//     width: 50px;
+//     height: 50px;
+//     border-radius: 50%;
+//     box-shadow: 0px 4px 15px 0px rgba(67, 67, 67, 0.15);
+//     background-color: #fff;
+//     color: #0674ec;
+//     // &:active {
+//     //   color: #7347c1;
+//     // }
+//   }
+//   .slick-next {
+//     right: 0;
+//   }
+// }
+
+
+
+// end testimonials 
+
+// start blog 
+
+.blog {
+  background-color: #eff1f5;
+  padding: 120px 0;
+}
 
 
 
@@ -1109,6 +1291,18 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+// end blog 
 
 
 
